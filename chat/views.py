@@ -3,7 +3,7 @@ from django.http import JsonResponse
 
 from chat.models import Chat
 
-def chat_view(request):
+def send_message(request):
     if request.method == 'POST':
         name = request.POST.get('name')
         message = request.POST.get('message')
